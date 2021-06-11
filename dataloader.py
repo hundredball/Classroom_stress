@@ -30,16 +30,28 @@ def read_data():
     Read EEG data and stress level
     -----
     
-    
+    Returns
+    --------
+    EEG_list: list of 2d array
+        i: example
+        j: channel
+        k: time
+    labels: 1d array
+        stress level of data
+    subjects: 1d array
+        subject ID of data
     '''
     num_samples = 171
     
     # --- Prepare predictors ---
+    print('Load data from .mat files...')
     channels = sio.loadmat('./data/ch_lib.mat')
     channels_common = find_common_channels()
     
     EEG_list = []
     miss_sample = []
+    subjects = []
+
     for i_sample in range(num_samples):
         file_path = './data/rawdata/%d.mat'%(i_sample+1)
         
@@ -48,7 +60,7 @@ def read_data():
             miss_sample.append(i_sample)
             continue
             
-        print('Sub ', i_sample+1)
+        #print('Sub ', i_sample+1)
         EEG = sio.loadmat(file_path)
         EEG = EEG['tmp']
         
@@ -74,7 +86,9 @@ def read_data():
         threshold = group_mean.loc[sub]['stress']
     
         labels.append(stress_sub>threshold)
+        subjects.append(sub)
     
     labels = np.asarray(labels, 'int')
+    subjects = np.asarray(subjects, 'int')
     
-    return EEG_list, labels
+    return EEG_list, labels, subjects
