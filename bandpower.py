@@ -32,7 +32,7 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
 
     Returns
     -------
-    powers : numpy 3D array (i,j,k)
+    powers : list of 2d array
         i : example
         j : channel
         k : band
@@ -48,7 +48,7 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
     win = 5*fs
     
     num_channel = data[0].shape[0]
-    powers = np.zeros((len(data), num_channel, len(low)))
+    powers = []
     for i, sample in enumerate(data):
         freqs, psd = signal.welch(sample, fs, nperseg=win, noverlap=win/2)
         
@@ -65,7 +65,7 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
             idx_power = idx[i_band,:]
             sample_powers[:,i_band] = simps(psd[:,idx_power], dx=freq_res)
         
-        powers[i,:] = sample_powers
+        powers.append(sample_powers)
         
     #print('freqs: ', freqs)
     print('Shape of psd: ', psd.shape)
@@ -77,5 +77,5 @@ if __name__ == '__main__':
     # Save data for all subject
     X, Y, _ = dl.read_data()
     powers = get_bandpower(X, 500, low=[3], high=[10])
-    print(powers.shape)
+    print(len(powers))
     
