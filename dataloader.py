@@ -99,6 +99,7 @@ def read_data(label_format=1, common_flag = False):
     df_summary = df_summary.dropna(how='all')
     df_summary = df_summary.rename(columns = {'folder/session':'session', 'labelID':'subject'})
     df_summary.loc[:,'subject'] = [int(df_summary['subject'].values[i][1:]) for i in range(len(df_summary['subject']))]
+    df_summary = df_summary[['session','subject','channelLocations']]
     df_all = pd.merge(df_DASS, df_summary, how='inner', sort=False, on=['subject','session'])
 
     # Change session, e.g. 20150506_s26 -> 2015-0506

@@ -16,7 +16,7 @@ from scipy.integrate import simps
 
 import dataloader as dl
 
-def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
+def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30], dB_scale = False):
     '''
     Calculate bandpower of theta, alpha, beta
 
@@ -29,6 +29,12 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
         k : sample
     fs : int
         sampling rate
+    low : list
+        lower bounds of band power
+    high : list
+        higher bounds of band power
+    dB_scale : bool
+        tranform band power into dB
 
     Returns
     -------
@@ -42,12 +48,12 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
     assert isinstance(fs, int) and fs>0 
     assert hasattr(low, '__iter__') and hasattr(high, '__iter__')
     assert all((high[i]>=low[i]) for i in range(len(high)))
+    assert isinstance(dB_scale, bool)
     
     print('Calculating the bandpower of time-series data...')
     # Define window length
     win = 5*fs
     
-    num_channel = data[0].shape[0]
     powers = []
     for i, sample in enumerate(data):
         freqs, psd = signal.welch(sample, fs, nperseg=win, noverlap=win/2)
@@ -60,22 +66,34 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30]):
         idx = idx.T   # (65,3)->(3,65)
         
         # Compute the absolute power by approximating the area under the curve
-        sample_powers = np.zeros((num_channel,len(high)))
+        sample_powers = np.zeros((sample.shape[0],len(high)))
         for i_band in range(len(high)):
             idx_power = idx[i_band,:]
             sample_powers[:,i_band] = simps(psd[:,idx_power], dx=freq_res)
         
+        # Transform into dB
+        if dB_scale:
+            sample_powers = 10*np.log10(sample_powers)
+        
         powers.append(sample_powers)
         
-    #print('freqs: ', freqs)
-    print('Shape of psd: ', psd.shape)
+    print('freqs: ', freqs)
         
     return powers
 
 if __name__ == '__main__':
     
-    # Save data for all subject
-    X, Y, _ = dl.read_data()
-    powers = get_bandpower(X, 500, low=[3], high=[10])
-    print(len(powers))
+    fs = 500
+    t = np.linspace(0,60,60*fs)
+    f1, f2 = 20, 40
+    signal = 0
+    for i in range(1,51):
+        signal += np.random.rand()*np.cos(2*np.pi*i*t)
+    signal = [signal[np.newaxis,:]]
+
+    low, high = list(range(1,50)), list(range(2,51))
+    powers = bandpower.get_bandpower(signal, fs, low, high)
+    
+    freqs = range(1,50)
+    plt.plot(freqs,powers[0][0])
     
