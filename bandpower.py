@@ -10,6 +10,7 @@ import itertools
 import numpy as np
 import pandas as pd
 import pickle
+import matplotlib.pyplot as plt
 from scipy import signal
 from scipy import interpolate
 from scipy.integrate import simps
@@ -55,6 +56,7 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30], dB_scale = False):
     win = 5*fs
     
     powers = []
+    psds = []
     for i, sample in enumerate(data):
         freqs, psd = signal.welch(sample, fs, nperseg=win, noverlap=win/2)
         
@@ -74,26 +76,34 @@ def get_bandpower(data, fs, low = [4,7,13], high=[7,13,30], dB_scale = False):
         # Transform into dB
         if dB_scale:
             sample_powers = 10*np.log10(sample_powers)
+            psd = 10*np.log10(psd)
         
         powers.append(sample_powers)
+        psds.append(psd)
         
     print('freqs: ', freqs)
         
-    return powers
+    return powers, psds, freqs
 
 if __name__ == '__main__':
     
-    fs = 500
+    fs = 1000
     t = np.linspace(0,60,60*fs)
     f1, f2 = 20, 40
-    signal = 0
+    time_signal = 0
     for i in range(1,51):
-        signal += np.random.rand()*np.cos(2*np.pi*i*t)
-    signal = [signal[np.newaxis,:]]
+        time_signal += 1/i*np.cos(2*np.pi*i*t)
+    time_signal = [time_signal[np.newaxis,:]]
 
     low, high = list(range(1,50)), list(range(2,51))
-    powers = bandpower.get_bandpower(signal, fs, low, high)
+    powers, psds, freqs = get_bandpower(time_signal, fs, low, high)
     
-    freqs = range(1,50)
-    plt.plot(freqs,powers[0][0])
+    #freqs = range(1,50)
+    indices = np.where(freqs<50)[0]
+    psds = [psds[i][:,indices] for i in range(len(psds))]
+    freqs = freqs[indices]
+    plt.plot(freqs,psds[0][0])
+    plt.xlabel('Hz')
+    plt.ylabel('PSD')
+    plt.savefig('./results/test_bandpower.png')
     

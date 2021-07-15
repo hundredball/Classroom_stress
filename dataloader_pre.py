@@ -24,7 +24,7 @@ def find_common_channels():
 
     return channel_all_list
 
-def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
+def read_data(label_format=1, common_flag = False):
     
     '''
     Read EEG data and stress level
@@ -35,8 +35,6 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
         3: DSS increase or normal within each subject (>= mean+std)
     common_flag : bool
         select common channels
-    data_folder : str
-        rawdata or preprocessed
     
     Returns
     --------
@@ -116,7 +114,7 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     channels_list = []
 
     for i_sample in range(len(df_all)):
-        file_path = './data/%s/%d.mat'%(data_folder,df_all.loc[i_sample,'DASS_record_number'])
+        file_path = './data/preprocessed/%d.mat'%(df_all.loc[i_sample,'DASS_record_number'])
 
         # Continue if file of sample doesn't exist
         if not path.exists(file_path):
@@ -139,15 +137,17 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
 
         # Load EEG
         EEG = sio.loadmat(file_path)
-        EEG = EEG['tmp']
+        EEG = EEG['data']
 
         # Select channels
         channels_i = df_all.iloc[i_sample]['channels']
         channels_i_index = [i for i in range(len(channels_i)) if (channels_i[i] in channels_common or not common_flag)]
         channels_i_name = [channels_i[i] for i in range(len(channels_i)) if (channels_i[i] in channels_common or not common_flag)]
 
+        #print('%d - len(EEG):%d ; len(channels_i_index):%d'%(i_sample, len(EEG), len(channels_i_index)))
+        #print('%d - EEG.shape: %s'%(i_sample, EEG.shape))
         channels_list.append(channels_i_name)
-        EEG_list.append(EEG[channels_i_index,:])
+        EEG_list.append(EEG)
 
     df_all = df_all.drop(drop_list)
     df_all = df_all.reset_index(drop=True)
@@ -158,4 +158,7 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     labels = np.asarray(labels, 'int')
     
     return EEG_list, labels, df_all
+    
+if __name__ == '__main__':
+    EEG_list, labels, df_all = read_data()
     
