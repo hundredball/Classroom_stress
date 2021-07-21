@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 import dataloader
 
-def average_channels(EEG_list, df_all):
+def avg_channels_into_regions(EEG_list, df_all):
     '''
     Average over channels by six regions
     

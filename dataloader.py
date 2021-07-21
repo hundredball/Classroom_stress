@@ -82,28 +82,7 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
 
         channels_list.append(channels_i_name)
     df_DASS.loc[:,'channels'] = channels_list
-
-    # Read dataframes of DSS
-    subjects = list(range(1,27))
-    df_DSS = pd.DataFrame()
-
-    for subject in subjects:
-        if subject <= 18:
-            file_path = './data/DSS/first semester/%s/first_datebystress%d.txt'%(str(subject).zfill(2), subject)
-        else:
-            file_path = './data/DSS/second semester/%s/second_datebystress%d.txt'%(str(subject-18).zfill(2), subject-18)
-
-        df = pd.read_csv(file_path, sep = '\s+', header=0, names=['session','stress_DSS'], index_col=False)
-        df.loc[:,'subject'] = [subject]*len(df)
-        df_DSS = df_DSS.append(df)
-
-    df_DSS = df_DSS.reset_index(drop=True)
-    group_DSS = df_DSS.groupby(by='subject')
-    mean_DSS = group_DSS.mean()
-    std_DSS = group_DSS.std()
-    # Take average of stress if some subjects have DSS record on the same date
-    df_DSS = df_DSS.groupby(by=['subject', 'session']).mean().reset_index()
-
+    
     # Merge dataframes of DASS and recording system
     df_summary = pd.read_csv('./data/summary_NCTU_RWN-SFC.csv')
     df_summary = df_summary.dropna(how='all')
@@ -112,11 +91,33 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     df_summary = df_summary[['session','subject','channelLocations']]
     df_all = pd.merge(df_DASS, df_summary, how='inner', sort=False, on=['subject','session'])
 
-    # Change session, e.g. 20150506_s26 -> 2015-0506
-    df_all.loc[:,'session'] = [date.split('_')[0][:4] + '-' + date.split('_')[0][4:] for date in df_all['session']]
+    # Read dataframes of DSS
+    if label_format == 3:
+        subjects = list(range(1,27))
+        df_DSS = pd.DataFrame()
 
-    # Merge dataframes of DSS and df_all
-    df_all = pd.merge(df_all, df_DSS, how='inner', sort=False, on=['subject','session'])
+        for subject in subjects:
+            if subject <= 18:
+                file_path = './data/DSS/first semester/%s/first_datebystress%d.txt'%(str(subject).zfill(2), subject)
+            else:
+                file_path = './data/DSS/second semester/%s/second_datebystress%d.txt'%(str(subject-18).zfill(2), subject-18)
+
+            df = pd.read_csv(file_path, sep = '\s+', header=0, names=['session','stress_DSS'], index_col=False)
+            df.loc[:,'subject'] = [subject]*len(df)
+            df_DSS = df_DSS.append(df)
+
+        df_DSS = df_DSS.reset_index(drop=True)
+        group_DSS = df_DSS.groupby(by='subject')
+        mean_DSS = group_DSS.mean()
+        std_DSS = group_DSS.std()
+        # Take average of stress if some subjects have DSS record on the same date
+        df_DSS = df_DSS.groupby(by=['subject', 'session']).mean().reset_index()
+
+        # Change session, e.g. 20150506_s26 -> 2015-0506
+        df_all.loc[:,'session'] = [date.split('_')[0][:4] + '-' + date.split('_')[0][4:] for date in df_all['session']]
+
+        # Merge dataframes of DSS and df_all
+        df_all = pd.merge(df_all, df_DSS, how='inner', sort=False, on=['subject','session'])
 
     labels = []
     EEG_list = []
@@ -134,14 +135,14 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
         # Get increased stress or normal label for each subject
         sub = df_all.loc[i_sample]['subject']
         stress_DASS = df_all.loc[i_sample]['stress']
-        stress_DSS = df_all.loc[i_sample]['stress_DSS']
-
+        
         if label_format==1:
             threshold = mean_DASS.loc[sub]['stress'] + std_DASS.loc[sub]['stress']
             labels.append(stress_DASS>threshold)
         elif label_format==2:
             labels.append(stress_DASS>15)
         elif label_format==3:
+            stress_DSS = df_all.loc[i_sample]['stress_DSS']
             threshold = mean_DSS.loc[sub]['stress_DSS'] + std_DSS.loc[sub]['stress_DSS']
             labels.append(stress_DSS>threshold)
 
