@@ -52,7 +52,15 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     
     print('Load data from .mat files...')
 
-    channels = sio.loadmat('./data/ch_lib.mat')
+    channels = sio.loadmat('./data/ch_lib.mat')['ch_lib']
+    if data_folder == 'rawdata':
+        EEG_fieldName = 'tmp'
+    elif data_folder == 'preprocessed':
+        remove_channels = sio.loadmat('./data/rmCh_lib.mat')['rmCh_lib']
+        EEG_fieldName = 'data'
+    else:
+        raise ValueError
+        
     channels_common = find_common_channels()
     max_num_channel = len(channels_common) if common_flag else 30
 
@@ -69,7 +77,7 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     for i_sample in range(len(df_DASS)):
     
         # Select channels
-        channels_i = channels['ch_lib'][i_sample][0][0]
+        channels_i = channels[i_sample][0][0]
         channels_i_name = [channels_i[i][0] for i in range(len(channels_i))]
 
         channels_list.append(channels_i_name)
@@ -139,7 +147,7 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
 
         # Load EEG
         EEG = sio.loadmat(file_path)
-        EEG = EEG['tmp']
+        EEG = EEG[EEG_fieldName]
 
         # Select channels
         channels_i = df_all.iloc[i_sample]['channels']
