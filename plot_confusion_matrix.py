@@ -54,11 +54,11 @@ def plot_confusion_matrix(y_true, y_pred, classes, fileName=None,
     classes = classes[unique_labels(y_true, y_pred)]
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        print("Normalized confusion matrix")
-    else:
-        print('Confusion matrix, without normalization')
+        #print("Normalized confusion matrix")
+    #else:
+        #print('Confusion matrix, without normalization')
 
-    print(cm)
+    #print(cm)
 
     fig, ax = plt.subplots()
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap, aspect='auto')
