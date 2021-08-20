@@ -27,11 +27,10 @@ def select_features(X_train, X_test, Y_train):
     assert isinstance(X_train, np.ndarray) and X_train.ndim==2
     
     sel_ = SelectFromModel(LogisticRegression(C=1, penalty='l1', solver='liblinear'))
-    sel_.fit(X_train, Y_train)
-    indices = np.where(sel_.estimator_.coef_!=0)[1]
+    X_train = sel_.fit_transform(X_train, Y_train)
+    X_test = sel_.transform(X_test)
     
-    return X_train[:, indices], X_test[:, indices]
-    
+    return X_train, X_test
 
 def avg_channels_into_regions(EEG_list, df_all):
     '''
