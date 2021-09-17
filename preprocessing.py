@@ -32,6 +32,27 @@ def select_features(X_train, X_test, Y_train):
     
     return X_train, X_test
 
+def reReference(EEG_list, labels, df_all, reference):
+    '''
+    Rereference data to given channel
+    '''
+    
+    drop_index = set()
+    for i in range(len(EEG_list)):
+        
+        try: 
+            index_reference = df_all.loc[i, 'channels'].index(reference)
+            EEG_list[i] = EEG_list[i] - EEG_list[i][index_reference,:]
+            
+        except ValueError:
+            # If CZ is not in the channels, drop it
+            drop_index.add(i)
+            
+    # Drop samples without CZ channels
+    EEG_list, labels, df_all = remove_trials(EEG_list, labels, df_all, drop_index)
+    
+    return EEG_list, labels, df_all
+
 def avg_channels_into_regions(EEG_list, df_all, mode=1):
     '''
     Average over channels by six regions
