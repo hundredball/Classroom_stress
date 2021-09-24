@@ -3,29 +3,58 @@ from os import path
 import numpy as np
 import pandas as pd
 import scipy.io as sio
+import glob
 
-def find_common_channels():
+def find_common_channels(channels):
     '''
     Find common channels across all samples
     '''
-    channels = sio.loadmat('./data/ch_lib.mat')
+    #channels = sio.loadmat('./data/ch_lib.mat')
     
-    channel_all_list = [channels['ch_lib'][0][0][0][i_channel][0] for i_channel in range(30)]
+    channel_all_list = [channels[0][0][0][i_channel][0] for i_channel in range(30)]
 
-    for i_sub in range(len(channels['ch_lib'])):
+    for i_sub in range(len(channels)):
     
-        if len(channels['ch_lib'][i_sub][0][0])==0:
+        if len(channels[i_sub][0][0])==0:
             continue
         
-        channel_list = [channels['ch_lib'][i_sub][0][0][i_channel][0] for i_channel in range(len(channels['ch_lib'][i_sub][0][0]))]
+        channel_list = [channels[i_sub][0][0][i_channel][0] for i_channel in range(len(channels[i_sub][0][0]))]
         for channel in channel_all_list:
             if channel not in channel_list:
                 channel_all_list.remove(channel)
 
     return channel_all_list
 
-def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
+def read_DASS(fileName):
+    '''
+    Read from csv file, return dataframe
+    '''
+    df_DASS = pd.read_csv(fileName)
+    df_DASS.loc[:,'session'] = [date.replace("'",'') for date in df_DASS['session']] # Remove ' in session
+    df_DASS['session'] = df_DASS['session'].str[:8]
     
+    return df_DASS
+
+def read_channels(fileName): 
+    '''
+    Read from mat file, return List[List[str]]
+    '''
+    channels = sio.loadmat(fileName)['ch_lib']
+    rest = fileName.find('rest')!=-1
+    num_sample = len(channels[0]) if rest else len(channels)
+    
+    channels_list = []
+    for i_sample in range(num_sample):
+    
+        # Select channels
+        channels_i = channels[0][i_sample][0] if rest else channels[i_sample][0][0]
+        channels_i_name = [channels_i[i][0] for i in range(len(channels_i))]
+
+        channels_list.append(channels_i_name)
+        
+    return channels_list
+
+def read_data(label_format=1, data_folder = 'rawdata'):
     '''
     Read EEG data and stress level
     -----
@@ -33,10 +62,8 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
         1: DASS increase or normal within each subject (>= mean+std)
         2: DASS increase or normal of DASS standard
         3: DSS increase or normal within each subject (>= mean+std)
-    common_flag : bool
-        select common channels
     data_folder : str
-        rawdata or preprocessed
+        rawdata, preprocessed, rest
     
     Returns
     --------
@@ -52,48 +79,56 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     
     print('Load data from .mat files...')
 
-    channels = sio.loadmat('./data/ch_lib.mat')['ch_lib']
     if data_folder == 'rawdata':
+        channels = read_channels('./data/ch_lib.mat')
         EEG_fieldName = 'tmp'
     elif data_folder == 'preprocessed':
-        remove_channels = sio.loadmat('./data/rmCh_lib.mat')['rmCh_lib']
+        channels = read_channels('./data/ch_lib.mat')
         EEG_fieldName = 'data'
+    elif data_folder == 'rest':
+        channels = read_channels('./data/rest/ch_lib.mat')
+        channels = [channels[i//2] for i in range(2*len(channels))]
+        files = glob.glob('./data/rest/2015*')
+        sessions, subjectIDs, fileNames, periods = [], [], [], []
+        for file in files:
+            sessions.append(file[12:20])
+            subjectIDs.append(int(file[22:24]))
+            fileNames.append(file[12:])
+            periods.append('before' if file[-5]=='b' else 'after')
+        df_trials = pd.DataFrame({'session': sessions, 'subject': subjectIDs, 'fileName': fileNames, 'period':periods})
+        EEG_fieldName = 'rest_1_data'    # Replace 1 by a or b according to data
     else:
         raise ValueError
-        
-    channels_common = find_common_channels()
-    max_num_channel = len(channels_common) if common_flag else 30
 
     # Read dataframes of DASS
-    df_DASS = pd.read_csv('./data/SFC_DASS21.csv')
-    df_DASS.loc[:,'session'] = [date.replace("'",'') for date in df_DASS['session']] # Remove ' in session
-    df_DASS.loc[:,'DASS_record_number'] = list(range(1,len(df_DASS)+1))
+    if data_folder == 'rest':
+        df_DASS_before = read_DASS('./data/SFC_DASS21_before stress.csv')
+        df_DASS_after = read_DASS('./data/SFC_DASS21_after stress.csv')
+        df_DASS_before['period'] = ['before']*len(df_DASS_before)
+        df_DASS_after['period'] = ['after']*len(df_DASS_after)
+        df_DASS = pd.concat([df_DASS_before, df_DASS_after], ignore_index=True)
+        df_DASS = pd.merge(df_DASS, df_trials, how='inner', on=['subject', 'session', 'period'])
+        df_DASS = df_DASS.sort_values(by=['subject', 'session', 'period']).reset_index(drop=True)
+    else:
+        df_DASS = read_DASS('./data/SFC_DASS21.csv')
+        df_DASS.loc[:,'fileName'] = ['%d.mat'%(i) for i in range(1, len(df_DASS)+1)]
     group_DASS = df_DASS.groupby(by='subject')
     mean_DASS = group_DASS.mean()
     std_DASS = group_DASS.std()
-
-    # Add corresponding channels in DASS dataframe
-    channels_list = []
-    for i_sample in range(len(df_DASS)):
-    
-        # Select channels
-        channels_i = channels[i_sample][0][0]
-        channels_i_name = [channels_i[i][0] for i in range(len(channels_i))]
-
-        channels_list.append(channels_i_name)
-    df_DASS.loc[:,'channels'] = channels_list
+    df_DASS['channels'] = channels
     
     # Merge dataframes of DASS and recording system
     df_summary = pd.read_csv('./data/summary_NCTU_RWN-SFC.csv')
     df_summary = df_summary.dropna(how='all')
     df_summary = df_summary.rename(columns = {'folder/session':'session', 'labelID':'subject'})
     df_summary.loc[:,'subject'] = [int(df_summary['subject'].values[i][1:]) for i in range(len(df_summary['subject']))]
+    df_summary['session'] = df_summary['session'].str[:8]
     df_summary = df_summary[['session','subject','channelLocations']]
-    df_all = pd.merge(df_DASS, df_summary, how='inner', sort=False, on=['subject','session'])
-
+    df_all = pd.merge(df_DASS, df_summary, how='left', sort=False, on=['subject','session'])
+    
     # Read dataframes of DSS
     if label_format == 3:
-        subjects = list(range(1,27))
+        subjects = list(range(19,27)) if data_folder=='rest' else list(range(1,27)) 
         df_DSS = pd.DataFrame()
 
         for subject in subjects:
@@ -125,7 +160,7 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
     channels_list = []
 
     for i_sample in range(len(df_all)):
-        file_path = './data/%s/%d.mat'%(data_folder,df_all.loc[i_sample,'DASS_record_number'])
+        file_path = './data/%s/%s'%(data_folder,df_all.loc[i_sample,'fileName'])
 
         # Continue if file of sample doesn't exist
         if not path.exists(file_path):
@@ -148,21 +183,16 @@ def read_data(label_format=1, common_flag = False, data_folder = 'rawdata'):
 
         # Load EEG
         EEG = sio.loadmat(file_path)
-        EEG = EEG[EEG_fieldName]
+        if data_folder == 'rest':
+            rest_period = 'a' if df_all.loc[i_sample, 'period']=='after' else 'b'
+            EEG = EEG[EEG_fieldName.replace('1', rest_period)]
+        else:
+            EEG = EEG[EEG_fieldName]
 
-        # Select channels
-        channels_i = df_all.iloc[i_sample]['channels']
-        channels_i_index = [i for i in range(len(channels_i)) if (channels_i[i] in channels_common or not common_flag)]
-        channels_i_name = [channels_i[i] for i in range(len(channels_i)) if (channels_i[i] in channels_common or not common_flag)]
-
-        channels_list.append(channels_i_name)
-        EEG_list.append(EEG[channels_i_index,:])
+        EEG_list.append(EEG)
 
     df_all = df_all.drop(drop_list)
     df_all = df_all.reset_index(drop=True)
-
-    if common_flag:
-        df_all['channels'] = channels_list
 
     labels = np.asarray(labels, 'int')
     
