@@ -62,6 +62,7 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         1: DASS increase or normal within each subject (>= mean+std)
         2: DASS increase or normal of DASS standard
         3: DSS increase or normal within each subject (>= mean+std)
+        4: Compare before and after exam DASS increase and decrease (responder) or DASS static (non-responder)
     data_folder : str
         rawdata, preprocessed, rest
     
@@ -76,6 +77,8 @@ def read_data(label_format=1, data_folder = 'rawdata'):
     df_all : Dataframe
         subject ID and channels
     '''
+    
+    assert (label_format==4 and data_folder=='rest') or label_format!=4
     
     print('Load data from .mat files...')
 
@@ -108,7 +111,7 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         df_DASS_after['period'] = ['after']*len(df_DASS_after)
         df_DASS = pd.concat([df_DASS_before, df_DASS_after], ignore_index=True)
         df_DASS = pd.merge(df_DASS, df_trials, how='inner', on=['subject', 'session', 'period'])
-        df_DASS = df_DASS.sort_values(by=['subject', 'session', 'period']).reset_index(drop=True)
+        df_DASS = df_DASS.sort_values(by=['session', 'subject', 'period']).reset_index(drop=True)
     else:
         df_DASS = read_DASS('./data/SFC_DASS21.csv')
         df_DASS.loc[:,'fileName'] = ['%d.mat'%(i) for i in range(1, len(df_DASS)+1)]
@@ -180,6 +183,8 @@ def read_data(label_format=1, data_folder = 'rawdata'):
             stress_DSS = df_all.loc[i_sample]['stress_DSS']
             threshold = mean_DSS.loc[sub]['stress_DSS'] + std_DSS.loc[sub]['stress_DSS']
             labels.append(stress_DSS>threshold)
+        elif label_format == 4 and i_sample<len(df_all)//2:
+            labels.append(int(df_all.loc[i_sample*2, 'stress']!=df_all.loc[i_sample*2+1, 'stress']))
 
         # Load EEG
         EEG = sio.loadmat(file_path)
@@ -189,7 +194,12 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         else:
             EEG = EEG[EEG_fieldName]
 
-        EEG_list.append(EEG)
+        if label_format!=4 or (label_format==4 and rest_period=='b'):
+            EEG_list.append(EEG)
+            
+        # Drop after period if label format is 4
+        if label_format==4 and rest_period=='a':
+            drop_list.append(i_sample)
 
     df_all = df_all.drop(drop_list)
     df_all = df_all.reset_index(drop=True)

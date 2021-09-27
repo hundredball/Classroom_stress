@@ -137,11 +137,5 @@ def avg_channels_into_regions(EEG_list, df_all, mode=1):
         
     # Replace channels with regions
     df_all['channels'] = [regions for _ in range(len(df_all))]
-    '''
-    if mode == 1:
-        df_all['channels'] = [['F','LT','C','RT','P','O'] for _ in range(len(df_all))]
-    elif mode == 2:
-        df_all['channels'] = [['RF','LF','RT','LT','RC','LC','RP','LP','O'] for _ in range(len(df_all))]
-    '''
         
     return EEG_regions_list
