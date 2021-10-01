@@ -62,7 +62,10 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         1: DASS increase or normal within each subject (>= mean+std)
         2: DASS increase or normal of DASS standard
         3: DSS increase or normal within each subject (>= mean+std)
-        4: Compare before and after exam DASS increase and decrease (responder) or DASS static (non-responder)
+        4: Compare before and after exam DASS increase and decrease (responder) or DASS static (non-responder), only load before EEG
+        5: Same as 4, but only load after EEG
+        6: Same as 4, but load before and after EEG
+        
     data_folder : str
         rawdata, preprocessed, rest
     
@@ -78,8 +81,9 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         subject ID and channels
     '''
     
-    assert (label_format==4 and data_folder=='rest') or label_format!=4
-    
+    if label_format in [4,5,6]:
+        assert data_folder == 'rest'
+     
     print('Load data from .mat files...')
 
     if data_folder == 'rawdata':
@@ -183,7 +187,7 @@ def read_data(label_format=1, data_folder = 'rawdata'):
             stress_DSS = df_all.loc[i_sample]['stress_DSS']
             threshold = mean_DSS.loc[sub]['stress_DSS'] + std_DSS.loc[sub]['stress_DSS']
             labels.append(stress_DSS>threshold)
-        elif label_format == 4 and i_sample<len(df_all)//2:
+        elif label_format in [4,5,6] and i_sample<len(df_all)//2:
             labels.append(int(df_all.loc[i_sample*2, 'stress']!=df_all.loc[i_sample*2+1, 'stress']))
 
         # Load EEG
@@ -194,11 +198,11 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         else:
             EEG = EEG[EEG_fieldName]
 
-        if label_format!=4 or (label_format==4 and rest_period=='b'):
+        if label_format not in [4,5] or (label_format==4 and rest_period=='b') or (label_format==5 and rest_period=='a'):
             EEG_list.append(EEG)
             
         # Drop after period if label format is 4
-        if label_format==4 and rest_period=='a':
+        if (label_format==4 and rest_period=='a') or (label_format==5 and rest_period=='b'):
             drop_list.append(i_sample)
 
     df_all = df_all.drop(drop_list)
