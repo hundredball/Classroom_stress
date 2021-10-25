@@ -60,14 +60,14 @@ def read_data(label_format=1, data_folder = 'rawdata'):
     -----
     label_format: int
         1: DASS increase or normal within each subject (>= mean+std)
-        2: DASS increase or normal of DASS standard
+        2: DASS increase or normal of DASS standard (>=16)
         3: DSS increase or normal within each subject (>= mean+std)
         4: Compare before and after exam DASS increase and decrease (responder) or DASS static (non-responder), only load before EEG
         5: Same as 4, but only load after EEG
         6: Same as 4, but load before and after EEG
         
     data_folder : str
-        rawdata, preprocessed, rest
+        rawdata, bp_ica_only, rest
     
     Returns
     --------
@@ -89,8 +89,17 @@ def read_data(label_format=1, data_folder = 'rawdata'):
     if data_folder == 'rawdata':
         channels = read_channels('./data/ch_lib.mat')
         EEG_fieldName = 'tmp'
-    elif data_folder == 'preprocessed':
-        channels = read_channels('./data/ch_lib.mat')
+    elif data_folder == 'bp_ica_only':
+        channels = pd.read_csv('./data/30ch_loc_SynAmps2.csv')['label'].values
+        channels = [channel[1:-1] for channel in channels]
+        
+        files = glob.glob('./data/bp_ica_only/*.mat')
+        files = sorted(files, key=lambda file: int(file.split('/')[3][:-4]))    # Sort by number *.mat
+        fileNames, numbers = [], []
+        for file in files:
+            fileNames.append(file.split('/')[3])
+            numbers.append(int(file.split('/')[3][:-4]))
+        df_trials = pd.DataFrame({'fileName':fileNames, 'number':numbers})
         EEG_fieldName = 'data'
     elif data_folder == 'rest':
         channels = read_channels('./data/rest/ch_lib.mat')
@@ -118,11 +127,12 @@ def read_data(label_format=1, data_folder = 'rawdata'):
         df_DASS = df_DASS.sort_values(by=['session', 'subject', 'period']).reset_index(drop=True)
     else:
         df_DASS = read_DASS('./data/SFC_DASS21.csv')
-        df_DASS.loc[:,'fileName'] = ['%d.mat'%(i) for i in range(1, len(df_DASS)+1)]
+        if data_folder == 'rawdata':
+            df_DASS.loc[:,'fileName'] = ['%d.mat'%(i) for i in range(1, len(df_DASS)+1)]
     group_DASS = df_DASS.groupby(by='subject')
     mean_DASS = group_DASS.mean()
     std_DASS = group_DASS.std()
-    df_DASS['channels'] = channels
+    df_DASS['channels'] = [channels for _ in range(len(df_DASS))] if data_folder=='bp_ica_only' else channels
     
     # Merge dataframes of DASS and recording system
     df_summary = pd.read_csv('./data/summary_NCTU_RWN-SFC.csv')
@@ -130,8 +140,10 @@ def read_data(label_format=1, data_folder = 'rawdata'):
     df_summary = df_summary.rename(columns = {'folder/session':'session', 'labelID':'subject'})
     df_summary.loc[:,'subject'] = [int(df_summary['subject'].values[i][1:]) for i in range(len(df_summary['subject']))]
     df_summary['session'] = df_summary['session'].str[:8]
-    df_summary = df_summary[['session','subject','channelLocations']]
-    df_all = pd.merge(df_DASS, df_summary, how='left', sort=False, on=['subject','session'])
+    df_summary = df_summary[['number','session','subject','channelLocations']]
+    if data_folder == 'bp_ica_only':
+        df_summary = pd.merge(df_summary, df_trials, how='inner', on=['number'])
+    df_all = pd.merge(df_DASS, df_summary, how='inner', sort=False, on=['subject','session'])
     
     # Read dataframes of DSS
     if label_format == 3:

@@ -23,6 +23,14 @@ class StressData:
         self.labels = labels
         self.df_all = df_all
         
+        ## TODO: Remove trials that have mismatch number of channels in EEG_list and df_all
+        remove_indices = set()
+        for i in range(len(self.EEG_list)):
+            if self.EEG_list[i].shape[0] != len(self.df_all.loc[i,'channels']):
+                remove_indices.add(i)
+        if remove_indices:        
+            self.remove_trials(remove_indices)
+        
     def remove_trials(self, remove_indices = None):
         '''
         Remove trials of given indices
@@ -31,6 +39,10 @@ class StressData:
         # Bad trials by visual inspection
         if remove_indices == None:
             remove_indices = {96, 97, 101, 109, 111, 113, 115, 116, 119, 141, 147, 164}
+        print('Remove trials:')
+        for index in remove_indices:
+            print('Number: %d, Session: %s, Subject: %d'%(
+                self.df_all.loc[index,'number'], self.df_all.loc[index,'session'], self.df_all.loc[index,'subject']))
 
         select_indices = [i for i in range(len(self.EEG_list)) if i not in remove_indices]
 
