@@ -60,7 +60,7 @@ def read_data(label_format=1, data_folder = 'rawdata'):
     -----
     label_format: int
         1: DASS increase or normal within each subject (>= mean+std)
-        2: DASS increase or normal of DASS standard (>=16)
+        2: DASS increase or normal of DASS standard (>=15)
         3: DSS increase or normal within each subject (>= mean+std)
         4: Compare before and after exam DASS increase and decrease (responder) or DASS static (non-responder), only load before EEG
         5: Same as 4, but only load after EEG
@@ -194,7 +194,7 @@ def read_data(label_format=1, data_folder = 'rawdata'):
             threshold = mean_DASS.loc[sub]['stress'] + std_DASS.loc[sub]['stress']
             labels.append(stress_DASS>threshold)
         elif label_format==2:
-            labels.append(stress_DASS>15)
+            labels.append(stress_DASS>14)
         elif label_format==3:
             stress_DSS = df_all.loc[i_sample]['stress_DSS']
             threshold = mean_DSS.loc[sub]['stress_DSS'] + std_DSS.loc[sub]['stress_DSS']
