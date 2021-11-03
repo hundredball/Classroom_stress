@@ -1,9 +1,13 @@
+import itertools
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.feature_selection import SelectFromModel
 from sklearn.linear_model import LogisticRegression
+import scipy
 
 import dataloader
+
+fs = 1000
 
 class StressData:
     
@@ -163,6 +167,52 @@ class StressData:
                 indices.append(i)
                 
         self.remove_trials(indices)
+        
+    def get_coherence(self, low, high):
+        '''
+        Add coherence of signal after averaging channels into regions
+        
+        Parameter
+        ----------
+        low: list of numbers
+            Low frequency of frequency bands
+        high: list of numbers
+            High frequency of freqeuncy bands
+            
+        Return
+        ----------
+        coherence: numpy 2d array
+            Magnitude squared coherence of of region combinations 
+        
+        '''
+        assert len(low)==len(high) and all([low[i]<=high[i] for i in range(len(low))])
+        
+        if len(self.EEG_list[0]) not in [6, 9]:
+            print('Please average channels into regions first.')
+            return
+        
+        num_regions = len(self.EEG_list[0])
+        num_samples = len(self.EEG_list)
+        num_bands = len(low)
+        coherence = np.zeros( (num_samples, int(num_regions*(num_regions-1)/2), num_bands) )
+        win = 5*fs
+        
+        # Calculate coherence for each signal
+        for i_sample in range(len(self.EEG_list)):
+            
+            for i_comb, (r1, r2) in enumerate(itertools.combinations(range(num_regions), r=2)):
+                freqs, C = scipy.signal.coherence(self.EEG_list[i_sample][r1,:], 
+                                                  self.EEG_list[i_sample][r2,:], fs=fs, nperseg=win, noverlap=win//2)
+                
+                # Find intersecting values in frequency vector
+                idx = np.logical_and(freqs[:,np.newaxis] >= low, freqs[:,np.newaxis] <= high)
+                idx = idx.T   # (65,3)->(3,65)
+                
+                for i_band in range(idx.shape[0]):
+                    coherence[i_sample, i_comb, i_band] = np.mean(C[idx[i_band,:]])
+                    
+        return coherence.reshape((len(coherence),-1))
+                
 
 def select_features(X_train, X_test, Y_train):
     
