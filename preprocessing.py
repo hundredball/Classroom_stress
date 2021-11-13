@@ -27,7 +27,7 @@ class StressData:
         self.labels = labels
         self.df_all = df_all
         
-        ## TODO: Remove trials that have mismatch number of channels in EEG_list and df_all
+        # Remove trials that have mismatch number of channels in EEG_list and df_all
         remove_indices = set()
         for i in range(len(self.EEG_list)):
             if self.EEG_list[i].shape[0] != len(self.df_all.loc[i,'channels']):
@@ -170,7 +170,7 @@ class StressData:
         
     def get_coherence(self, low, high):
         '''
-        Add coherence of signal after averaging channels into regions
+        Add coherence of signal
         
         Parameter
         ----------
@@ -186,21 +186,19 @@ class StressData:
         
         '''
         assert len(low)==len(high) and all([low[i]<=high[i] for i in range(len(low))])
+        assert all(len(self.EEG_list[i])==len(self.EEG_list[0]) for i in range(len(self.EEG_list)))
+        assert all(self.df_all.loc[i, 'channels']==self.df_all.loc[0, 'channels'] for i in range(len(self.df_all)))
         
-        if len(self.EEG_list[0]) not in [6, 9]:
-            print('Please average channels into regions first.')
-            return
-        
-        num_regions = len(self.EEG_list[0])
+        num_channels = len(self.EEG_list[0])
         num_samples = len(self.EEG_list)
         num_bands = len(low)
-        coherence = np.zeros( (num_samples, int(num_regions*(num_regions-1)/2), num_bands) )
+        coherence = np.zeros( (num_samples, int(num_channels*(num_channels-1)/2), num_bands) )
         win = 5*fs
         
         # Calculate coherence for each signal
         for i_sample in range(len(self.EEG_list)):
             
-            for i_comb, (r1, r2) in enumerate(itertools.combinations(range(num_regions), r=2)):
+            for i_comb, (r1, r2) in enumerate(itertools.combinations(range(num_channels), r=2)):
                 freqs, C = scipy.signal.coherence(self.EEG_list[i_sample][r1,:], 
                                                   self.EEG_list[i_sample][r2,:], fs=fs, nperseg=win, noverlap=win//2)
                 
