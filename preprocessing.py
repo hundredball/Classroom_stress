@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.feature_selection import SelectFromModel
 from sklearn.linear_model import LogisticRegression
 import scipy
+from pyriemann.estimation import Covariances
 
 import dataloader
 
@@ -35,6 +36,20 @@ class StressData:
         if remove_indices:        
             self.remove_trials(remove_indices)
         
+    def remove_abnormal_trials(self, tol=1e4):
+        '''
+        Remove trials with time signal larger than tol or smaller than -tol
+        '''
+        
+        remove_indices = []
+        
+        for i in range(len(self.EEG_list)):
+            if np.any(self.EEG_list[i]>=tol) or np.min(self.EEG_list[i]<=-tol):
+                remove_indices.append(i)
+                
+        
+        self.remove_trials(remove_indices = remove_indices)
+        
     def remove_trials(self, remove_indices = None):
         '''
         Remove trials of given indices
@@ -45,8 +60,9 @@ class StressData:
             remove_indices = {96, 97, 101, 109, 111, 113, 115, 116, 119, 141, 147, 164}
         print('Remove trials:')
         for index in remove_indices:
-            print('Number: %d, Session: %s, Subject: %d'%(
-                self.df_all.loc[index,'number'], self.df_all.loc[index,'session'], self.df_all.loc[index,'subject']))
+            print('Number: %d, Session: %s, Subject: %d, Label: %d'%(
+                self.df_all.loc[index,'number'], self.df_all.loc[index,'session'], 
+                self.df_all.loc[index,'subject'], self.labels[index]))
 
         select_indices = [i for i in range(len(self.EEG_list)) if i not in remove_indices]
 
@@ -224,7 +240,7 @@ class StressData:
         
         assert all(len(self.EEG_list[i])==len(self.EEG_list[0]) for i in range(len(self.EEG_list)))
         
-        return np.array([np.cov(EEG) for EEG in self.EEG_list])
+        return np.array([Covariances('oas').transform(EEG[np.newaxis,:,:])[0] for EEG in self.EEG_list])
 
 def select_features(X_train, X_test, Y_train):
     
