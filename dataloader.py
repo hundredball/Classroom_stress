@@ -138,6 +138,7 @@ def read_data(label_format=1, data_folder = 'rawdata'):
     df_summary = pd.read_csv('./data/summary_NCTU_RWN-SFC.csv')
     df_summary = df_summary.dropna(how='all')
     df_summary = df_summary.rename(columns = {'folder/session':'session', 'labelID':'subject'})
+    df_summary = df_summary.drop(np.where(df_summary['session'].str[-3:]=='(X)')[0])    # Drop broken trials
     df_summary.loc[:,'subject'] = [int(df_summary['subject'].values[i][1:]) for i in range(len(df_summary['subject']))]
     df_summary['session'] = df_summary['session'].str[:8]
     df_summary = df_summary[['number','session','subject','channelLocations']]

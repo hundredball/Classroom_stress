@@ -211,6 +211,20 @@ class StressData:
                     
         return coherence.reshape((len(coherence),-1))
                 
+    def get_covariance(self):
+        '''
+        Calculate covariance matrix acroos channels for each trial
+        
+        Return
+        -----------
+        covariance: 3d array
+            i: num_trials
+            j, k: num_channels
+        '''
+        
+        assert all(len(self.EEG_list[i])==len(self.EEG_list[0]) for i in range(len(self.EEG_list)))
+        
+        return np.array([np.cov(EEG) for EEG in self.EEG_list])
 
 def select_features(X_train, X_test, Y_train):
     
