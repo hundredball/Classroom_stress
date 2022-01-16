@@ -165,6 +165,7 @@ class StressData:
                         indices_channels[3].append(j)
                     else:
                         indices_channels[2].append(j)
+                              
 
             for i_region in range(len(regions)):
                 EEG_regions[i_region,:] = np.mean(self.EEG_list[i][indices_channels[i_region],:], axis=0)
@@ -176,7 +177,7 @@ class StressData:
         
         self.EEG_list = EEG_regions_list
         
-        # Remove trials with nan
+        # Remove trials with lack of regions
         indices = []
         for i in range(len(self.EEG_list)):
             if np.sum(np.isnan(self.EEG_list[i]))>0:
