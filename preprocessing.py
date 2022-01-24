@@ -34,6 +34,7 @@ class StressData:
             if self.EEG_list[i].shape[0] != len(self.df_all.loc[i,'channels']):
                 remove_indices.add(i)
         if remove_indices:        
+            print('Remove due to mismatch number of channels in EEG_list and df_all')
             self.remove_trials(remove_indices)
         
     def remove_abnormal_trials(self, tol=1e4):
@@ -183,7 +184,9 @@ class StressData:
             if np.sum(np.isnan(self.EEG_list[i]))>0:
                 indices.append(i)
                 
-        self.remove_trials(indices)
+        if indices:
+            print('Remove trials due to lack of regions')
+            self.remove_trials(indices)
         
     def get_coherence(self, low, high):
         '''
