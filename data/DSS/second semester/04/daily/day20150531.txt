@@ -1,0 +1,8 @@
+Stress: 2
+Anxiety: 1
+Depression: 1
+Fatigue: 3
+KSS: 6
+Readiband: 98
+PSD: 0100,0700,0,1,0,3,0,0,0,0,97,100,97
+Time: 20150531, 07:47

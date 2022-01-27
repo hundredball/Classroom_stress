@@ -1,0 +1,889 @@
+﻿number,taskLabel,purpose,folder/session,labelID,inSessionNumber,gender,YOB,age,hand,vision,hearing,height,weight,medication,,channelLocations,channelLocationType,dataRecording,,,modality,NA,NA,NA,NA,NA,NA,NA
+1,"resting, lecture",attention/fatigue,20140922_s1,S01,s1,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s1.fdt / .set,2014/9/22,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+2,"resting, lecture",attention/fatigue,20141103_s1+s2,S01,s1,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s1.fdt / .set,2014/11/3,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+3,"resting, lecture",attention/fatigue,20141201_s1+s2,S01,s1,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s1.fdt / .set,2014/12/1,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+4,"resting, lecture",attention/fatigue,20141215_s1+s2,S01,s1,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s1.fdt / .set,2014/12/15,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+5,"resting, lecture",attention/fatigue,20141229_s1+s2,S01,s1,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s1.fdt / .set,2014/12/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+6,"resting, lecture",attention/fatigue,20150112_s1+s2,S01,s1,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s1.fdt / .set,2015/1/12,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+7,"resting, lecture",attention/fatigue,20141006_s2,S02,s2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s2.fdt / .set,2014/10/6,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+8,"resting, lecture",attention/fatigue,20141103_s1+s2,S02,s2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s2.fdt / .set,2014/11/3,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+9,"resting, lecture",attention/fatigue,20141201_s1+s2,S02,s2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s2.fdt / .set,2014/12/1,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+10,"resting, lecture",attention/fatigue,20141215_s1+s2,S02,s2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s2.fdt / .set,2014/12/15,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+11,"resting, lecture",attention/fatigue,20141229_s1+s2,S02,s2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s2.fdt / .set,2014/12/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+12,"resting, lecture",attention/fatigue,20150112_s1+s2,S02,s2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s2.fdt / .set,2015/1/12,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+13,"resting, lecture",attention/fatigue,20140922_s3,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/9/22,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+14,"resting, lecture",attention/fatigue,20141006_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/10/6,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+15,"resting, lecture",attention/fatigue,20141020_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/10/20,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+16,"resting, lecture",attention/fatigue,20141103_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/11/3,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+17,"resting, lecture",attention/fatigue,20141201_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/12/1,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+18,"resting, lecture",attention/fatigue,20141215_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/12/15,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+19,"resting, lecture",attention/fatigue,20141229_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2014/12/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+20,"resting, lecture",attention/fatigue,20150112_s3+s4,S03,s3,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s3.fdt / .set,2015/1/12,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+21,"resting, lecture",attention/fatigue,20141006_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2014/10/6,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+22,"resting, lecture",attention/fatigue,20141020_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2014/10/20,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+23,"resting, lecture",attention/fatigue,20141103_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2014/11/3,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+24,"resting, lecture",attention/fatigue,20141201_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2014/12/1,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+25,"resting, lecture",attention/fatigue,20141215_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2014/12/15,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+26,"resting, lecture",attention/fatigue,20141229_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2014/12/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+27,"resting, lecture",attention/fatigue,20150112_s3+s4,S04,s4,female,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s4.fdt / .set,2015/1/12,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+28,"resting, lecture",attention/fatigue,20140929_s5+s8,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2014/9/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+29,"resting, lecture",attention/fatigue,20141013_s5+s8,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2014/10/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+30,"resting, lecture",attention/fatigue,20141110_s5+s8,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2014/11/10,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+31,"resting, lecture",attention/fatigue,20141124_s5,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2014/11/24,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+32,"resting, lecture",attention/fatigue,20141208_s5+s8,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2014/12/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+33,"resting, lecture",attention/fatigue,20141222_s5+s8,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2014/12/22,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+34,"resting, lecture",attention/fatigue,20150105_s5+s8,S05,s5,female,1989,27,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s5.fdt / .set,2015/1/5,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+35,"resting, lecture",attention/fatigue,20141013_s6+s7,S06,s6,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s6.fdt / .set,2014/10/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+36,"resting, lecture",attention/fatigue,20141110_s6,S06,s6,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s6.fdt / .set,2014/11/10,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+37,"resting, lecture",attention/fatigue,20141124_s6+s7,S06,s6,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s6.fdt / .set,2014/11/24,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+38,"resting, lecture",attention/fatigue,20141208_s6+s7,S06,s6,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s6.fdt / .set,2014/12/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+39,"resting, lecture",attention/fatigue,20141222_s6+s7,S06,s6,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s6.fdt / .set,2014/12/22,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+40,"resting, lecture",attention/fatigue,20150105_s6+s7,S06,s6,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s6.fdt / .set,2015/1/5,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+41,"resting, lecture",attention/fatigue,20141013_s6+s7,S07,s7,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,s7.fdt / .set,2014/10/13,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,,Quik-Cap Ref
+42,"resting, lecture",attention/fatigue,20141124_s6+s7,S07,s7,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s7.fdt / .set,2014/11/24,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+43,"resting, lecture",attention/fatigue,20141208_s6+s7,S07,s7,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s7.fdt / .set,2014/12/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+44,"resting, lecture",attention/fatigue,20141222_s6+s7,S07,s7,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s7.fdt / .set,2014/12/22,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+45,"resting, lecture",attention/fatigue,20150105_s6+s7,S07,s7,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s7.fdt / .set,2015/1/5,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+46,"resting, lecture",attention/fatigue,20140929_s5+s8,S08,s8,female,1990,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s8.fdt / .set,2014/9/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+47,"resting, lecture",attention/fatigue,20141013+s5+s8,S08,s8,female,1990,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,s8.fdt / .set,2014/10/13,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,,Quik-Cap Ref
+48,"resting, lecture",attention/fatigue,20141110_s5+s8,S08,s8,female,1990,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s8.fdt / .set,2014/11/10,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+49,"resting, lecture",attention/fatigue,20141208_s5+s8,S08,s8,female,1990,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s8.fdt / .set,2014/12/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+50,"resting, lecture",attention/fatigue,20141222_s5+s8,S08,s8,female,1990,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s8.fdt / .set,2014/12/22,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+51,"resting, lecture",attention/fatigue,20150105_s5+s8,S08,s8,female,1990,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s8.fdt / .set,2014/1/5,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+52,"resting, lecture",attention/fatigue,20141002_s9+s12,S09,s9,female,1991,25,Left,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s9.fdt / .set,2014/10/2,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+53,"resting, lecture",attention/fatigue,20141016_s9+s12,S09,s9,female,1991,25,Left,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s9.fdt / .set,2014/10/16,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+54,"resting, lecture",attention/fatigue,20141030_s9+s12,S09,s9,female,1991,25,Left,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s9.fdt / .set,2014/10/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+55,"resting, lecture",attention/fatigue,20141113_s9+s12,S09,s9,female,1991,25,Left,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s9.fdt / .set,2014/11/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+56,"resting, lecture",attention/fatigue,20141225_s9+s12,S09,s9,female,1991,25,Left,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s9.fdt / .set,2014/12/25,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+57,"resting, lecture",attention/fatigue,20150108_s9+s12,S09,s9,female,1991,25,Left,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s9.fdt / .set,2015/1/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+58,"resting, lecture",attention/fatigue,20141106_s10+s15,S10,s10,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s10.fdt / .set,2014/11/6,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+59,"resting, lecture",attention/fatigue,20141204_s10+s15,S10,s10,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s10.fdt / .set,2014/12/4,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+60,"resting, lecture",attention/fatigue,20141218_s10+s15,S10,s10,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s10.fdt / .set,2014/12/18,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+61,"resting, lecture",attention/fatigue,20141223_s10+s11,S10,s10,male,1991,25,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s10.fdt / .set,2014/12/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+62,"resting, lecture",attention/fatigue,20141014_s11+s16,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/10/14,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+63,"resting, lecture",attention/fatigue,20141028_s11+s16,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/10/28,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+64,"resting, lecture",attention/fatigue,20141111_s11+s16,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/11/11,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+65,"resting, lecture",attention/fatigue,20141125_s11+s16,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/11/25,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+66,"resting, lecture",attention/fatigue,20141209_s11+s15,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/12/9,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+67,"resting, lecture",attention/fatigue,20141223_s10+s11,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/12/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+68,"resting, lecture",attention/fatigue,20150106_s11,S11,s11,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s11.fdt / .set,2014/1/6,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+69,"resting, lecture",attention/fatigue,20141002_s9+s12,S12,s12,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s12.fdt / .set,2014/10/2,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+70,"resting, lecture",attention/fatigue,20141016_s9+s12,S12,s12,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s12.fdt / .set,2014/10/16,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+71,"resting, lecture",attention/fatigue,20141030_s9+s12,S12,s12,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s12.fdt / .set,2014/10/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+72,"resting, lecture",attention/fatigue,20141113_s9+s12,S12,s12,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s12.fdt / .set,2014/11/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+73,"resting, lecture",attention/fatigue,20141225_s9+s12,S12,s12,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s12.fdt / .set,2014/12/25,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+74,"resting, lecture",attention/fatigue,20150108_s9+s12,S12,s12,female,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s12.fdt / .set,2015/1/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+75,"resting, lecture",attention/fatigue,20140923_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/9/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+76,"resting, lecture",attention/fatigue,20141021_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/10/21,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+77,"resting, lecture",attention/fatigue,20141104_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/11/4,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+78,"resting, lecture",attention/fatigue,20141118_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/11/18,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+79,"resting, lecture",attention/fatigue,20141202_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/12/2,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+80,"resting, lecture",attention/fatigue,20141216_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/12/16,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+81,"resting, lecture",attention/fatigue,20141230_s13+s14,S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2014/12/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+82,"resting, lecture",attention/fatigue,20150113_s13+s14(X),S13,s13,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s13.fdt / .set,2015/1/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+83,"resting, lecture",attention/fatigue,20140923_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/9/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+84,"resting, lecture",attention/fatigue,20141021_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/10/21,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+85,"resting, lecture",attention/fatigue,20141104_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/11/4,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+86,"resting, lecture",attention/fatigue,20141118_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/11/18,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+87,"resting, lecture",attention/fatigue,20141202_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/12/2,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+88,"resting, lecture",attention/fatigue,20141216_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/12/16,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+89,"resting, lecture",attention/fatigue,20141230_s13+s14,S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2014/12/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+90,"resting, lecture",attention/fatigue,20150113_s13+s14(X),S14,s14,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s14.fdt / .set,2015/1/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+91,"resting, lecture",attention/fatigue,20140930_s15+s16,S15,s15,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s15.fdt / .set,2014/9/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+92,"resting, lecture",attention/fatigue,20141106_s10+s15,S15,s15,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s15.fdt / .set,2014/11/6,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+93,"resting, lecture",attention/fatigue,20141204_s10+s15,S15,s15,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s15.fdt / .set,2014/12/4,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+94,"resting, lecture",attention/fatigue,20141209_s11+s15,S15,s15,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s15.fdt / .set,2014/12/9,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+95,"resting, lecture",attention/fatigue,20141218_s10+s15,S15,s15,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s15.fdt / .set,2014/12/18,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+96,"resting, lecture",attention/fatigue,20140930_s15+s16,S16,s16,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s16.fdt / .set,2014/9/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+97,"resting, lecture",attention/fatigue,20141014_s11+s16,S16,s16,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s16.fdt / .set,2014/10/14,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+98,"resting, lecture",attention/fatigue,20141028_s11+s16,S16,s16,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s16.fdt / .set,2014/10/28,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+99,"resting, lecture",attention/fatigue,20141111_s11+s16,S16,s16,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s16.fdt / .set,2014/11/11,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+100,"resting, lecture",attention/fatigue,20141125_s11+s16,S16,s16,male,1993,23,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s16.fdt / .set,2014/11/25,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+101,"resting, lecture",attention/fatigue,20141002_s17+s18,S17,s17,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s17.fdt / .set,2014/10/2,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+102,"resting, lecture",attention/fatigue,20141023_s17+s18,S17,s17,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s17.fdt / .set,2014/10/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+103,"resting, lecture",attention/fatigue,20141127_s17+s18,S17,s17,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s17.fdt / .set,2014/11/27,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+104,"resting, lecture",attention/fatigue,20141211_s17+s18,S17,s17,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s17.fdt / .set,2014/12/11,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+105,"resting, lecture",attention/fatigue,20150108_s17+s18,S17,s17,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s17.fdt / .set,2015/1/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+106,"resting, lecture",attention/fatigue,20141002_s17+s18,S18,s18,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s18.fdt / .set,2014/10/2,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+107,"resting, lecture",attention/fatigue,20141023_s17+s18,S18,s18,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s18.fdt / .set,2014/10/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+108,"resting, lecture",attention/fatigue,20141127_s17+s18,S18,s18,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s18.fdt / .set,2014/11/27,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+109,"resting, lecture",attention/fatigue,20141211_s17+s18,S18,s18,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s18.fdt / .set,2014/12/11,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+110,"resting, lecture",attention/fatigue,20150108_s17+s18,S18,s18,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,s18.fdt / .set,2015/1/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+111,"resting, lecture",attention/fatigue,20150319_s19+s20,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150319_S1_ev.fdt / .set,2015/3/19,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+112,"resting, lecture",attention/fatigue,20150326_s19+s20+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150326_S1_ev.fdt / .set,2015/3/26,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+113,"resting, lecture",attention/fatigue,20150409_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150409_S1_ev.fdt / .set,2015/4/9,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+114,"resting, quiz, lecture","stress, attention/fatigue",20150416_s19+s20+s21,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150416_S1_ev.fdt / .set,2015/4/16,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+115,"resting, lecture",attention/fatigue,20150423_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150423_S1_ev.fdt / .set,2015/4/23,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+116,"resting, lecture",attention/fatigue,20150430_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150430_S1_ev.fdt / .set,2015/4/30,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+117,"resting, quiz, lecture","stress, attention/fatigue",20150507_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150507_S1_ev.fdt / .set,2015/5/7,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+118,"resting, lecture",attention/fatigue,20150514_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150514_S1_ev.fdt / .set,2015/5/14,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+119,"resting, lecture",attention/fatigue,20150521_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150521_S1_ev.fdt / .set,2015/5/21,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+120,"resting, lecture",attention/fatigue,20150604_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150604_S1_ev.fdt / .set,2015/6/4,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+121,"resting, quiz, lecture","stress, attention/fatigue",20150611_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150611_S1_ev.fdt / .set,2015/6/11,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+122,"resting, quiz, lecture","stress, attention/fatigue",20150618_s19+s20+s21,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150618_S1_ev.fdt / .set,2015/6/18,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+123,"resting, quiz, lecture","stress, attention/fatigue",20150625_s19+s20+s21+s22,S19,S1,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150625_S1_ev.fdt / .set,2015/6/25,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+124,"resting, lecture",attention/fatigue,20150319_s19+s20,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150319_S2_ev.fdt / .set,2015/3/19,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+125,"resting, lecture",attention/fatigue,20150326_s19+s20+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150326_S2_ev.fdt / .set,2015/3/26,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+126,"resting, lecture",attention/fatigue,20150409_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150409_S2_ev.fdt / .set,2015/4/9,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+127,"resting, quiz, lecture","stress, attention/fatigue",20150416_s19+s20+s21,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150416_S2_ev.fdt / .set,2015/4/16,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+128,"resting, lecture",attention/fatigue,20150423_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150423_S2_ev.fdt / .set,2015/4/23,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+129,"resting, lecture",attention/fatigue,20150430_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150430_S2_ev.fdt / .set,2015/4/30,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+130,"resting, quiz, lecture","stress, attention/fatigue",20150507_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150507_S2_ev.fdt / .set,2015/5/7,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+131,"resting, lecture",attention/fatigue,20150514_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150514_S2_ev.fdt / .set,2015/5/14,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+132,"resting, lecture",attention/fatigue,20150521_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150521_S2_ev.fdt / .set,2015/5/21,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+133,"resting, lecture",attention/fatigue,20150604_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150604_S2_ev.fdt / .set,2015/6/4,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+134,"resting, quiz, lecture","stress, attention/fatigue",20150611_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150611_S2_ev.fdt / .set,2015/6/11,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+135,"resting, quiz, lecture","stress, attention/fatigue",20150618_s19+s20+s21,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150618_S2_ev.fdt / .set,2015/6/18,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+136,"resting, quiz, lecture","stress, attention/fatigue",20150625_s19+s20+s21+s22,S20,S2,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150625_S2_ev.fdt / .set,2015/6/25,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+137,"resting, lecture",attention/fatigue,20150319_s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150319_S3_ev.fdt / .set,2015/3/19,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+138,"resting, lecture",attention/fatigue,20150409_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150409_S3_ev.fdt / .set,2015/4/9,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+139,"resting, quiz, lecture","stress, attention/fatigue",20150416_s19+s20+s21,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150416_S3_ev.fdt / .set,2015/4/16,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,,Quik-Cap Ref
+140,"resting, lecture",attention/fatigue,20150423_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150423_S3_ev.fdt / .set,2015/4/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+141,"resting, lecture",attention/fatigue,20150430_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150430_S3_ev.fdt / .set,2015/4/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+142,"resting, quiz, lecture","stress, attention/fatigue",20150507_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150507_S3_ev.fdt / .set,2015/5/7,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+143,"resting, lecture",attention/fatigue,20150514_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150514_S3_ev.fdt / .set,2015/5/14,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+144,"resting, lecture",attention/fatigue,20150521_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150521_S3_ev.fdt / .set,2015/5/21,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+145,"resting, lecture",attention/fatigue,20150604_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150604_S3_ev.fdt / .set,2015/6/4,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+146,"resting, quiz, lecture","stress, attention/fatigue",20150611_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150611_S3_ev.fdt / .set,2015/6/11,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+147,"resting, quiz, lecture","stress, attention/fatigue",20150618_s19+s20+s21,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150618_S3_ev.fdt / .set,2015/6/18,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+148,"resting, quiz, lecture","stress, attention/fatigue",20150625_s19+s20+s21+s22,S21,S3,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150625_S3_ev.fdt / .set,2015/6/25,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+149,"resting, lecture",attention/fatigue,20150319_s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150319_S4_ev.fdt / .set,2015/3/19,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+150,"resting, lecture",attention/fatigue,20150326_s19+s20+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150326_S4_ev.fdt / .set,2015/3/26,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,A1,Quik-Cap Ref
+151,"resting, lecture",attention/fatigue,20150409_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150409_S4_ev.fdt / .set,2015/4/9,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+152,"resting, lecture",attention/fatigue,20150423_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150423_S4_ev.fdt / .set,2015/4/23,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+153,"resting, lecture",attention/fatigue,20150430_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150430_S4_ev.fdt / .set,2015/4/30,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+154,"resting, quiz, lecture","stress, attention/fatigue",20150507_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150507_S4_ev.fdt / .set,2015/5/7,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+155,"resting, lecture",attention/fatigue,20150514_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150514_S4_ev.fdt / .set,2015/5/14,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+156,"resting, lecture",attention/fatigue,20150521_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150521_S4_ev.fdt / .set,2015/5/21,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+157,"resting, lecture",attention/fatigue,20150604_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150604_S4_ev.fdt / .set,2015/6/4,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+158,"resting, quiz, lecture","stress, attention/fatigue",20150611_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150611_S4_ev.fdt / .set,2015/6/11,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+159,"resting, quiz, lecture","stress, attention/fatigue",20150625_s19+s20+s21+s22,S22,S4,male,1992,24,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150625_S4_ev.fdt / .set,2015/6/25,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+160,"resting, lecture",attention/fatigue,20150408_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150408_S5_ev.fdt / .set,2015/4/8,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+161,"resting, lecture",attention/fatigue,20150415_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150415_S5_ev.fdt / .set,2015/4/15,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+162,"resting, exam, questions",stress,20150513_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150513_S5_ev.fdt / .set,2015/5/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+163,"resting, lecture, questions","attention/fatigue, stress",20150527_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150527_S5_ev.fdt / .set,2015/5/27,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+164,"resting, lecture, questions","attention/fatigue, stress",20150603_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150603_S5_ev.fdt / .set,2015/6/3,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+165,"resting, lecture, questions","attention/fatigue, stress",20150610_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150610_S5_ev.fdt / .set,2015/6/10,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+166,"resting, lecture, questions","attention/fatigue, stress",20150617_s23+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150617_S5_ev.fdt / .set,2015/6/17,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+167,"resting, exam, questions",stress,20150624_s23+s24+s25+s26,S23,S5,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150624_S5_ev.fdt / .set,2015/6/24,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+168,"resting, lecture",attention/fatigue,20150408_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150408_S6_ev.fdt / .set,2015/4/8,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+169,"resting, lecture",attention/fatigue,20150415_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150415_S6_ev.fdt / .set,2015/4/15,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+170,"resting, lecture",attention/fatigue,20150429_s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150429_S6_ev.fdt / .set,2015/4/29,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+171,"resting, lecture",attention/fatigue,20150506_s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,"20150506_S6.cnt, 20150506_S6_2.cnt",2015/5/6,20150506_S6_events.csv,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+172,"resting, exam, questions",stress,20150513_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150513_S6_ev.fdt / .set,2015/5/13,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+173,"resting, lecture, questions","attention/fatigue, stress",20150527_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150527_S6_ev.fdt / .set,2015/5/27,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+174,"resting, lecture, questions","attention/fatigue, stress",20150603_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150603_S6_ev.fdt / .set,2015/6/3,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+175,"resting, lecture, questions","attention/fatigue, stress",20150610_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150610_S6_ev.fdt / .set,2015/6/10,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+176,"resting, exam, questions",stress,20150624_s23+s24+s25+s26,S24,S6,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150624_S6_ev.fdt / .set,2015/6/24,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+177,"resting, lecture",attention/fatigue,20150408_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150408_S7_ev.fdt / .set,2015/4/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+178,"resting, lecture",attention/fatigue,20150415_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150415_S7_ev.fdt / .set,2015/4/15,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+179,"resting, lecture",attention/fatigue,20150429_s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150429_S7_ev.fdt / .set,2015/4/29,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+180,"resting, lecture",attention/fatigue,20150506_s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150506_S7_ev.fdt / .set,2015/5/6,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+181,"resting, exam, questions",stress,20150513_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150513_S7_ev.fdt / .set,2015/5/13,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+182,"resting, lecture, questions","attention/fatigue, stress",20150527_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150527_S7_ev.fdt / .set,2015/5/27,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+183,"resting, lecture, questions","attention/fatigue, stress",20150603_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150603_S7_ev.fdt / .set,2015/6/3,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+184,"resting, lecture, questions","attention/fatigue, stress",20150610_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150610_S7_ev.fdt / .set,2015/6/10,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+185,"resting, exam, questions",stress,20150624_s23+s24+s25+s26,S25,S7,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150624_S7_ev.fdt / .set,2015/6/24,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+186,"resting, lecture",attention/fatigue,20150408_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150408_S8_ev.fdt / .set,2015/4/8,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+187,"resting, lecture",attention/fatigue,20150415_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150415_S8_ev.fdt / .set,2015/4/15,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+188,"resting, lecture",attention/fatigue,20150429_s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150429_S8_ev.fdt / .set,2015/4/29,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+189,"resting, lecture",attention/fatigue,20150506_s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150506_S8_ev.fdt / .set,2015/5/6,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+190,"resting, exam, questions",stress,20150513_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150513_S8_ev.fdt / .set,2015/5/13,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+191,"resting, lecture, questions","attention/fatigue, stress",20150527_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150527_S8_ev.fdt / .set,2015/5/27,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+192,"resting, lecture, questions","attention/fatigue, stress",20150603_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150603_S8_ev.fdt / .set,2015/6/3,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+193,"resting, lecture, questions","attention/fatigue, stress",20150610_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150610_S8_ev.fdt / .set,2015/6/10,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+194,"resting, lecture, questions","attention/fatigue, stress",20150617_s23+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_NuAmps.xls,10-20,20150617_S8_ev.fdt / .set,2015/6/17,imported,EEG+ECG,1000,NeuroScan,NuAmps,30,"Ⅰ, Ⅱ","A1, A2",Mastoids
+195,"resting, exam, questions",stress,20150624_s23+s24+s25+s26,S26,S8,male,1994,26,Right,CorrectedToNormal,Normal,NA,NA,No,No,30ch_loc_SynAmps2.xls,10-20,20150624_S8_ev.fdt / .set,2015/6/24,imported,EEG+ECG,1000,NeuroScan,SynAmps2,30,Ⅰ,"M1, M2",Quik-Cap Ref
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,

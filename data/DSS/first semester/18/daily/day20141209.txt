@@ -1,0 +1,5 @@
+Stress: 17
+Fatigue: 5
+KSS: 5
+Readiband: 72
+PSD: 0200,1050,15,1,0,0,0,0,0,0,77,88,87
