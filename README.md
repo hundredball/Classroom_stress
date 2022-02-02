@@ -2,8 +2,12 @@
 Evaluate stress level through resting EEG
 
 ## Build environment
-Install [Anaconda](https://docs.anaconda.com/anaconda/install/index.html) and build a virtual environment by following code  
-`conda env create -f environment.yml`
+Install [Anaconda](https://docs.anaconda.com/anaconda/install/index.html) and build a virtual environment by following codes
+```
+conda create -n classroom python=3.7
+conda activate classroom
+pip install -r requirements.txt
+```
 
 ## Input new data
 Since I hard-coded different forms to read data according to the folder name, it would be easier to change the folder name to resting_ASR with ch_lib.mat in this folder and put them in `data/`. 
