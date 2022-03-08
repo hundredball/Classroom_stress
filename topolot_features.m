@@ -1,8 +1,10 @@
 clear variables; clc; close all;
 
+unified = false;
+
 % Read counts from mat file
 % {'theta': [F, LT, C, RT, P, O], ...}
-folder = './results/XGB_resting_ASR_psd/';
+folder = './results/XGB_resting_ASR_ref_psd/';
 feature = 'XGB_feature_importances';
 
 counts = load([folder feature '.mat']);
@@ -33,25 +35,30 @@ for band = {'theta', 'alpha', 'beta', 'gamma'}
     title(band{1});
     
     % Set colorbar scale
-    caxis([0, maximum]);
+    if unified
+        caxis([0, maximum]);
+    else
+        colorbar;
+    end
     
     figure_count = figure_count + 1;
 end
 
-% Build colorbar
-colorbar('Position', [0.9, 0.3, 0.01, 0.4]);
-
+if unified
+    % Build unified colorbar
+    colorbar('Position', [0.9, 0.3, 0.01, 0.4]);
+end
 % Build title
 if contains(feature, 'XGB')
-    title_type = 'feature_importances_';
+    title_type = 'feature_importances';
 else
-    title_type = 'degree_of_use_';
+    title_type = 'degree_of_use';
 end
 
-axes( 'Position', [0, 0.95, 1, 0.05] ) ;
-set( gca, 'Color', 'None', 'XColor', 'White', 'YColor', 'White' ) ;
-text( 0.5, 0, title_type, 'FontSize', 14', 'FontWeight', 'Bold', ...
-  'HorizontalAlignment', 'Center', 'VerticalAlignment', 'Bottom' ) ;
+% axes( 'Position', [0, 0.95, 1, 0.05] ) ;
+% set( gca, 'Color', 'None', 'XColor', 'White', 'YColor', 'White' ) ;
+% text( 0.5, 0, title_type, 'FontSize', 14', 'FontWeight', 'Bold', ...
+%   'HorizontalAlignment', 'Center', 'VerticalAlignment', 'Bottom' ) ;
 
 % Save figure
 saveas(gcf, [folder 'feature_topoplot.png']);
