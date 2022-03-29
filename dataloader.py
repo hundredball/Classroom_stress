@@ -59,6 +59,47 @@ def read_channels(fileName, channel_name='ch_lib'):
     return channels_list
 
 
+def read_IC_PSD(file_name):
+    """
+    Read IC PSD from mat file
+    """
+    
+    data = sio.loadmat(file_name)
+
+    # Read psd for normal and increase groups
+    psd_norm = np.array(data['plt_medall_norm'])
+    psd_inc = np.array(data['plt_medall_inc'])
+
+    # Seperate training and testing data
+    [test_norm_idx, test_inc_idx, norm_idx, inc_idx] = [np.array(data[x]).flatten() for x in [
+      'test_norm_idx', 'test_inc_idx', 'label_normal', 'label_increase'
+    ]]
+
+    psd_train, psd_test = [], []
+    label_train, label_test = [], []
+
+    for i, idx in enumerate(norm_idx):
+        if idx in test_norm_idx:
+            psd_test.append(psd_norm[i, ...])
+            label_test.append(0)
+        else:
+            psd_train.append(psd_norm[i, ...])
+            label_train.append(0)
+
+    for i, idx in enumerate(inc_idx):
+        if idx in test_inc_idx:
+            psd_test.append(psd_inc[i, ...])
+            label_test.append(1)
+        else:
+            psd_train.append(psd_inc[i, ...])
+            label_train.append(1)
+
+    [psd_train, psd_test, label_train, label_test] = [np.array(x) for x in
+                                                      [psd_train, psd_test, label_train, label_test]]
+
+    return psd_train, label_train, psd_test, label_test
+
+
 def read_data(label_format=1, data_folder='rawdata'):
     """
     Read EEG data and stress level
