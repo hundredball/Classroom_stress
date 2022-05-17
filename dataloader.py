@@ -63,7 +63,7 @@ def read_IC_PSD(file_name):
     """
     Read IC PSD from mat file
     """
-    
+
     data = sio.loadmat(file_name)
 
     # Read psd for normal and increase groups
@@ -72,7 +72,7 @@ def read_IC_PSD(file_name):
 
     # Seperate training and testing data
     [test_norm_idx, test_inc_idx, norm_idx, inc_idx] = [np.array(data[x]).flatten() for x in [
-      'test_norm_idx', 'test_inc_idx', 'label_normal', 'label_increase'
+        'test_norm_idx', 'test_inc_idx', 'label_normal', 'label_increase'
     ]]
 
     psd_train, psd_test = [], []
@@ -98,6 +98,50 @@ def read_IC_PSD(file_name):
                                                       [psd_train, psd_test, label_train, label_test]]
 
     return psd_train, label_train, psd_test, label_test
+
+
+def read_IC_PSD_LOSO(psd_file_name, summary_file_name):
+    """Read IC PSD for Leave-one-subject out"""
+
+    data = sio.loadmat(psd_file_name)
+    subject_info = pd.read_csv(summary_file_name)
+
+    # Read psd for normal and increase groups
+    psd_norm = np.array(data['plt_medall_norm'])
+    psd_inc = np.array(data['plt_medall_inc'])
+    psd_data = np.concatenate((psd_norm, psd_inc), axis=0)
+
+    # Create target for data, 0: normal, 1: increase
+    targets = np.array([0] * len(psd_norm) + [1] * len(psd_inc))
+
+    # Load subject ID for data
+    subject_ids = []
+    index_data = np.concatenate((data['label_normal'], data['label_increase']))
+    for index in index_data:
+        subject_ids.append(subject_info.loc[index - 1, 'Subject Number'])
+    subject_ids = np.array(subject_ids).flatten()
+
+    return psd_data, targets, subject_ids
+
+
+def split_by_subjects(psd_data, targets, subject_ids, selected_subject):
+    """Split data by subjects"""
+
+    X_train, Y_train, X_val, Y_val = [], [], [], []
+
+    for i, subject_id in enumerate(subject_ids):
+        if subject_id == selected_subject:
+            X_val.append(psd_data[i, ...])
+            Y_val.append(targets[i])
+        else:
+            X_train.append(psd_data[i, ...])
+            Y_train.append(targets[i])
+
+    [X_train, Y_train, X_val, Y_val] = [np.array(element) for element in [
+        X_train, Y_train, X_val, Y_val
+    ]]
+
+    return X_train, Y_train, X_val, Y_val
 
 
 def read_data(label_format=1, data_folder='rawdata'):
@@ -227,7 +271,7 @@ def read_data(label_format=1, data_folder='rawdata'):
                 file_path = './data/DSS/first semester/%s/first_datebystress%d.txt' % (str(subject).zfill(2), subject)
             else:
                 file_path = './data/DSS/second semester/%s/second_datebystress%d.txt' % (
-                str(subject - 18).zfill(2), subject - 18)
+                    str(subject - 18).zfill(2), subject - 18)
 
             df = pd.read_csv(file_path, sep='\s+', header=0, names=['session', 'stress_DSS'], index_col=False)
             df.loc[:, 'subject'] = [subject] * len(df)

@@ -7,8 +7,7 @@ import scipy
 from pyriemann.estimation import Covariances
 
 import dataloader
-
-fs = 1000
+import config as cfg
 
 
 class StressData:
@@ -189,7 +188,7 @@ class StressData:
             print('Remove trials due to lack of regions')
             self.remove_trials(indices)
 
-    def sliding_window_augmentation(self, window_size=10 * fs):
+    def sliding_window_augmentation(self, window_size=10 * cfg.fs):
         """
         Augment data by sliding window without overlapping
         """
@@ -236,14 +235,14 @@ class StressData:
         num_samples = len(self.EEG_list)
         num_bands = len(low)
         coherence = np.zeros((num_samples, int(num_channels * (num_channels - 1) / 2), num_bands))
-        win = 5 * fs
 
         # Calculate coherence for each signal
         for i_sample in range(len(self.EEG_list)):
 
             for i_comb, (r1, r2) in enumerate(itertools.combinations(range(num_channels), r=2)):
                 freqs, C = scipy.signal.coherence(self.EEG_list[i_sample][r1, :],
-                                                  self.EEG_list[i_sample][r2, :], fs=fs, nperseg=win, noverlap=win // 2)
+                                                  self.EEG_list[i_sample][r2, :], fs=cfg.fs,
+                                                  nperseg=cfg.win, noverlap=cfg.win // 2)
 
                 # Find intersecting values in frequency vector
                 idx = np.logical_and(freqs[:, np.newaxis] >= low, freqs[:, np.newaxis] <= high)
