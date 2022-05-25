@@ -124,13 +124,52 @@ def read_IC_PSD_LOSO(psd_file_name, summary_file_name):
     return psd_data, targets, subject_ids
 
 
+def read_IC_PSD_LOO(file_name):
+    """Read IC PSD with ICA preprocessing with only 11 subchannels for Leave-One-Out"""
+
+    data = sio.loadmat(file_name)
+    psd = np.array(list(data['ch_psd_lib'][0]))
+
+    labels = []
+    for data_index in data['sess_list'][0]:
+        if data_index in data['label_increase']:
+            labels.append(1)
+        else:
+            labels.append(0)
+
+    # Change dimension from (sample, channel, freqs) to (sample, freqs, channel)
+    psd = np.swapaxes(psd, 1, 2)
+    print(psd.shape)
+
+    return psd, labels
+
+
 def split_by_subjects(psd_data, targets, subject_ids, selected_subject):
-    """Split data by subjects"""
+    """Split data by subjects for LOSO"""
 
     X_train, Y_train, X_val, Y_val = [], [], [], []
 
     for i, subject_id in enumerate(subject_ids):
         if subject_id == selected_subject:
+            X_val.append(psd_data[i, ...])
+            Y_val.append(targets[i])
+        else:
+            X_train.append(psd_data[i, ...])
+            Y_train.append(targets[i])
+
+    [X_train, Y_train, X_val, Y_val] = [np.array(element) for element in [
+        X_train, Y_train, X_val, Y_val
+    ]]
+
+    return X_train, Y_train, X_val, Y_val
+
+
+def split_by_samples(psd_data, targets, data_index):
+    """Split data by data index for LOO"""
+
+    X_train, Y_train, X_val, Y_val = [], [], [], []
+    for i in range(len(psd_data)):
+        if i == data_index:
             X_val.append(psd_data[i, ...])
             Y_val.append(targets[i])
         else:

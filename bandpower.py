@@ -54,7 +54,7 @@ def get_bandpower(data, low = [4,7,13], high=[7,13,30], dB_scale = False):
     powers = []
     psds = []
     for i, sample in enumerate(data):
-        freqs, psd = signal.welch(sample, cfg.fs, nperseg=cfg.win, noverlap=cfg.win//2)
+        freqs, psd = signal.welch(sample, cfg.fs, nperseg=cfg.win, noverlap=cfg.win//2, average='median')
         
         # Frequency resolution
         freq_res = freqs[1] - freqs[0]  # = 1/0.5 = 2
@@ -69,15 +69,13 @@ def get_bandpower(data, low = [4,7,13], high=[7,13,30], dB_scale = False):
             idx_power = idx[i_band,:]
             sample_powers[:,i_band] = simps(psd[:,idx_power], dx=freq_res)
         
-        # Transform into dB
+        # Transform into dB+-
         if dB_scale:
             sample_powers = 10*np.log10(sample_powers)
             psd = 10*np.log10(psd)
         
         powers.append(sample_powers)
         psds.append(psd)
-        
-    print('freqs: ', freqs)
         
     return powers, psds, freqs
 
@@ -91,8 +89,8 @@ if __name__ == '__main__':
         time_signal += 1/i*np.cos(2*np.pi*i*t)
     time_signal = [time_signal[np.newaxis,:]]
 
-    low, high = list(range(1,50)), list(range(2,51))
-    powers, psds, freqs = get_bandpower(time_signal, fs, low, high)
+    low, high = list(range(1, 50, 3)), list(range(2, 51, 3))
+    powers, psds, freqs = get_bandpower(time_signal, low, high)
     
     #freqs = range(1,50)
     indices = np.where(freqs<50)[0]
@@ -101,5 +99,6 @@ if __name__ == '__main__':
     plt.plot(freqs,psds[0][0])
     plt.xlabel('Hz')
     plt.ylabel('PSD')
-    plt.savefig('./results/test_bandpower.png')
+    plt.show()
+    # plt.savefig('./results/test_bandpower.png')
     
