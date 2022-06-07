@@ -141,7 +141,10 @@ def read_IC_PSD_LOO(file_name):
     psd = np.swapaxes(psd, 1, 2)
     print(psd.shape)
 
-    return psd, labels
+    # Extract channels
+    channels = [channel[0] for channel in data['chan30'][0]]
+
+    return psd, labels, channels
 
 
 def split_by_subjects(psd_data, targets, subject_ids, selected_subject):
